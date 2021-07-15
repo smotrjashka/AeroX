@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="librealsense2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/librealsense2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

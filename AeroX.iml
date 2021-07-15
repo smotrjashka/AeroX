@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="javacpp" level="project" />
+    <orderEntry type="library" name="javacpp-platform" level="project" />
+    <orderEntry type="library" name="javacpp-windows-x86_64" level="project" />
+    <orderEntry type="library" name="artoolkitplus-android-arm" level="project" />
+    <orderEntry type="library" name="ffmpeg" level="project" />
+    <orderEntry type="library" name="ffmpeg-platform" level="project" />
+    <orderEntry type="library" name="javacpp-windows-x86" level="project" />
+    <orderEntry type="library" name="ffmpeg-windows-x86_64" level="project" />
+    <orderEntry type="library" name="ffmpeg-windows-x86" level="project" />
+    <orderEntry type="library" name="javacv" level="project" />
+    <orderEntry type="library" name="javacv-platform" level="project" />
+    <orderEntry type="library" name="opencv-platform" level="project" />
+    <orderEntry type="library" name="opencv-windows-x86_64" level="project" />
+    <orderEntry type="library" name="opencv-windows-x86" level="project" />
+    <orderEntry type="library" name="opencv" level="project" />
+    <orderEntry type="library" name="videoinput-platform" level="project" />
+    <orderEntry type="library" name="videoinput-windows-x86_64" level="project" />
+    <orderEntry type="library" name="videoinput-windows-x86" level="project" />
+    <orderEntry type="library" name="videoinput" level="project" />
+    <orderEntry type="library" name="librealsense-platform" level="project" />
+    <orderEntry type="library" name="librealsense" level="project" />
+    <orderEntry type="library" name="librealsense-windows-x86" level="project" />
+    <orderEntry type="library" name="librealsense-windows-x86_64" level="project" />
+    <orderEntry type="library" name="librealsense2-platform" level="project" />
+    <orderEntry type="library" name="librealsense2-windows-x86" level="project" />
+    <orderEntry type="library" name="librealsense2-windows-x86_64" level="project" />
+    <orderEntry type="library" name="librealsense2" level="project" />
+  </component>
+</module>

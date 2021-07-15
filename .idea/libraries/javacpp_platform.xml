@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="javacpp-platform">
+    <ANNOTATIONS>
+      <root url="jar://D:/javacpp-platform-1.5.5-bin/javacpp-platform.jar!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://D:/javacpp-platform-1.5.5-bin/javacpp-platform.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/javacpp-platform-1.5.5-bin/javacpp-platform.jar!/" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="jar://D:/javacpp-platform-1.5.5-bin/javacpp-platform.jar!/" />
+    </NATIVE>
+    <SOURCES>
+      <root url="jar://D:/javacpp-platform-1.5.5-bin/javacpp-platform.jar!/" />
+    </SOURCES>
+    <jarDirectory url="jar://D:/javacpp-platform-1.5.5-bin/javacpp-platform.jar!/" recursive="false" />
+    <jarDirectory url="jar://D:/javacpp-platform-1.5.5-bin/javacpp-platform.jar!/" recursive="false" type="SOURCES" />
+  </library>
+</component>

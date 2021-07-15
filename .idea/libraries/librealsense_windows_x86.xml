@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="librealsense-windows-x86">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/librealsense-windows-x86.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
