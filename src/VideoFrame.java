@@ -6,6 +6,7 @@ import org.bytedeco.javacv.Java2DFrameConverter;
 import java.awt.image.BufferedImage;
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
+import java.util.Date;
 
 public class VideoFrame {
     private VideoFlow hdVideoFlow;
@@ -46,17 +47,22 @@ public class VideoFrame {
                 System.out.println("thread try started");
                 grabberHD.setImageHeight(videoFlow.getHeight());
                 grabberHD.setImageWidth(videoFlow.getWidth());
+               /* grabberHD.setVideoCodec();
+                grabberHD.setVideoBitrate();*/
+                grabberHD.setFrameRate(30);
                 grabberHD.start();
+                long millis = System.currentTimeMillis();
+                System.out.println("millis start " + millis);
+                System.out.println("inf " + grabberHD.getVideoCodecName() + " " + grabberHD.getVideoBitrate());
 
                 while (!Thread.interrupted()) {
                     Frame frame = grabberHD.grab();
                     BufferedImage image = paintConverter.convert(frame);
 
-                    if (frame == null) {
+                  /*  if (frame == null) {
                         System.out.println("frame is null, break!");    //TODO wait for more that 1 null frame
                         break;
-                    } if (frame.image != null) {
-                        System.out.println("image not null");
+                    }else*/ if (frame.image != null) {
                         canvasFrame.showImage(image);
 
 
@@ -74,6 +80,9 @@ public class VideoFrame {
                             outBuffer.putShort(val);
                         }
                     }
+
+                    System.out.println("diff " + (System.currentTimeMillis() - millis));
+                    millis = System.currentTimeMillis();
                 }
 
                 VideoFrame.this.stop();
