@@ -3,10 +3,8 @@ import org.bytedeco.javacv.FFmpegFrameGrabber;
 import org.bytedeco.javacv.Frame;
 import org.bytedeco.javacv.Java2DFrameConverter;
 
-import java.awt.image.BufferedImage;
-import java.nio.ByteBuffer;
-import java.nio.FloatBuffer;
-import java.util.Date;
+import java.awt.image.*;
+import java.nio.*;
 
 public class VideoFrame {
     private VideoFlow hdVideoFlow;
@@ -50,6 +48,7 @@ public class VideoFrame {
                /* grabberHD.setVideoCodec();
                 grabberHD.setVideoBitrate();*/
                 grabberHD.setFrameRate(30);
+                System.out.println("3");
                 grabberHD.start();
                 long millis = System.currentTimeMillis();
                 System.out.println("millis start " + millis);
@@ -57,7 +56,9 @@ public class VideoFrame {
 
                 while (!Thread.interrupted()) {
                     Frame frame = grabberHD.grab();
-                    BufferedImage image = paintConverter.convert(frame);
+               //     System.out.println("frame channel " + frame.imageChannels);   //channel 3 for HD
+                  /*  System.out.println("image depth " + frame.imageDepth);*/  //8
+                    BufferedImage image = paintConverter.getBufferedImage(frame);
 
                   /*  if (frame == null) {
                         System.out.println("frame is null, break!");    //TODO wait for more that 1 null frame
